@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Score Keeper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="imgs/spikeball-kxEjm9s21bg-unsplash.jpg" alt="Good Vibes">
+        </div>
+        <div class="name">
+            <h3>Score Keeper</h3>
+        </div>
+        <div class="score">
+            <h2><span id="p1Display">0</span> to <span id="p2Display">0</span></h2>
+            <p>Use the buttons below to keep the score</p>
+            <form id="playingTo">
+                <label for="number">Playing to :</label>
+                <select name="number" id="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                </select>
+            </form>
+        </div>
+        <div id="outcome">
+            <h2><span id="winner"></span> won!!</h2>
+        </div>
+        <div class="commands">
+            <button id="p1Button">+1 Player One</button>
+            <button id="p2Button">+1 Player Two</button>
+            <button id="reset">Reset score</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
